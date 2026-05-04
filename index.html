@@ -51,10 +51,19 @@
                 </div>
 
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex gap-8 items-center">
+                <nav class="hidden md:flex gap-6 items-center">
                     <a href="#problemas" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Como Resolvemos</a>
                     <a href="#solucoes" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Funcionalidades</a>
                     <a href="#tecnologia" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Tecnologia</a>
+                    
+                    <div class="w-px h-6 bg-slate-200 mx-2"></div> <!-- Separador -->
+
+                    <!-- NOVO BOTÃO DE ACESSO AO SISTEMA -->
+                    <a href="https://kaisenclin.online/sistema" class="text-blue-600 hover:text-blue-700 font-bold flex items-center gap-2 transition-colors">
+                        <i data-lucide="log-in" class="w-5 h-5"></i>
+                        Acessar Sistema
+                    </a>
+
                     <button onclick="openModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md shadow-blue-600/20 flex items-center gap-2">
                         Agendar Demonstração
                     </button>
@@ -73,6 +82,15 @@
             <a href="#problemas" class="mobile-link block text-slate-600 font-medium">Como Resolvemos</a>
             <a href="#solucoes" class="mobile-link block text-slate-600 font-medium">Funcionalidades</a>
             <a href="#tecnologia" class="mobile-link block text-slate-600 font-medium">Tecnologia</a>
+            
+            <div class="h-px bg-slate-100 my-4"></div> <!-- Separador -->
+
+            <!-- NOVO BOTÃO DE ACESSO AO SISTEMA (MOBILE) -->
+            <a href="https://kaisenclin.online/sistema" class="w-full flex items-center justify-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-6 py-3 rounded-xl font-bold">
+                <i data-lucide="log-in" class="w-5 h-5"></i>
+                Acessar Sistema
+            </a>
+
             <button onclick="openModal()" class="w-full bg-blue-600 text-white px-6 py-3 rounded-xl font-medium">
                 Agendar Demonstração
             </button>
@@ -105,9 +123,11 @@
                     Quero ver na prática
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                 </button>
-                <button class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg transition-all">
-                    Falar com Consultor
-                </button>
+                <!-- Botão alternativo no hero para ir direto pro sistema -->
+                <a href="https://kaisenclin.online/sistema" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="log-in" class="w-5 h-5"></i>
+                    Acessar Sistema
+                </a>
             </div>
         </div>
     </section>
@@ -320,7 +340,7 @@
                 </span>
             </div>
             <div class="text-sm text-center md:text-left">
-                &copy; 2026 KaisenClin - Sistema de Gestão Clínica. Todos os direitos reservados.
+                &copy; 2024 KaisenClin - Sistema de Gestão Clínica. Todos os direitos reservados.
             </div>
             <div class="flex gap-4">
                 <a href="#" class="hover:text-white transition-colors">Suporte</a>
